@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun Safe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conatiner">
+      <h1>Sun Safe</h1>
+      <form action="/" method="post">
+        <label for="lat">Latitude:</label>
+        <input
+          type="text"
+          id="lat"
+          name="lat"
+          placeholder="Enter latitude"
+          required
+        />
+        <label for="lng">Longitude:</label>
+        <input
+          type="text"
+          id="lng"
+          name="lng"
+          placeholder="Enter Longitude"
+          required
+        />
+        <button type="submit">Check UV Index</button>
+      </form>
+      <% if (typeof uvIndex !== 'undefined') { %>
+      <h2>UV Index Information:</h2>
+      <p>Current UV Index: <%= uvIndex %></p>
+      <p>Safe Exposure Time: <%= safeExposureTime %> minutes</p>
+      <% if (needSunscreen) { %>
+      <p>You should apply sunscreen today!</p>
+      <% } else { %>
+      <p>No need for sunscreen today.</p>
+      <% } %> <% } else if (typeof error !== 'undefined') { %>
+      <h2>Error:</h2>
+      <p><%= error %></p>
+      <% } %>
+    </div>
+  </body>
+</html>

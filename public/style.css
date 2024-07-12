@@ -1,0 +1,82 @@
+/* Import Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap'); */
+
+/* Reset some default styles */
+body, h1, h2, p, form, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and style the text */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9c3ad;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style the container */
+.container {
+  text-align: center;
+  background-color: #bba682;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Style the heading */
+h1 {
+  color: #d28807;
+  margin-bottom: 20px;
+  font-family: "Noto Sans", cursive;
+}
+
+/* Style the form labels */
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+/* Style the input fields */
+form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 24px);
+}
+
+/* Style the submit button */
+form button {
+  padding: 10px 20px;
+  background-color: #d69e3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "Arial"
+}
+
+form button:hover {
+  background-color: #d98b25;
+}
+
+/* Style the subheading */
+h2 {
+  margin-top: 20px;
+  color: #333;
+  font-family: "Noto Sans", cursive;
+}
+
+/* Style the paragraphs */
+p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
